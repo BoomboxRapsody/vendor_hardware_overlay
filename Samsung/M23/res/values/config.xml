@@ -144,8 +144,6 @@
         <item>0,1</item>
     </string-array>
 	
-	<bool name="config_hardware_auto_brightness_available">false</bool> <!-- enable software-based auto brightness-->
-	
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>7</item>
         <item>34</item>

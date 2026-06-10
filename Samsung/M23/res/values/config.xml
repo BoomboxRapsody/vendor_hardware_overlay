@@ -144,12 +144,7 @@
         <item>0,1</item>
     </string-array>
 	
-	
-	<!-- Flag indicating whether we should enable the automatic brightness.
-         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">true</bool> <!-- enable software-based auto brightness-->
-
-    <bool name="config_hardware_auto_brightness_available">false</bool>
+	<bool name="config_hardware_auto_brightness_available">false</bool> <!-- enable software-based auto brightness-->
 	
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>7</item>
@@ -184,6 +179,10 @@
         <item>3000</item>
         <item>4000</item>
     </integer-array>
+	
+	<!-- Flag indicating whether we should enable the automatic brightness.
+         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <bool name="config_automatic_brightness_available">true</bool>
 	
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting

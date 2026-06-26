@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="me.phh.treble.overlay.samsung.m23"
+        package="me.phh.treble.overlay.samsung.m23xq"
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="android"

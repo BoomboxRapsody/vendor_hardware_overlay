@@ -3,8 +3,8 @@
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="android"
-                android:requiredSystemPropertyName="ro.product.device"
-                android:requiredSystemPropertyValue="m23xq"
-		android:priority="502"
+                android:requiredSystemPropertyName="ro.vendor.build.fingerprint"
+                android:requiredSystemPropertyValue="+*samsung/m23xq*"
+		android:priority="955"
 		android:isStatic="true" />
 </manifest>

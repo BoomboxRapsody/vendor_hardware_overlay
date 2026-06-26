@@ -80,6 +80,41 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 	
+	<integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>7</item>
+        <item>34</item>
+        <item>50</item>
+        <item>70</item>
+        <item>73</item>
+        <item>75</item>
+        <item>78</item>
+        <item>81</item>
+        <item>85</item>
+        <item>95</item>
+        <item>108</item>
+        <item>129</item>
+        <item>194</item>
+        <item>255</item>
+        <item>306</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLevels">
+        <item>8</item>
+        <item>15</item>
+        <item>30</item>
+        <item>50</item>
+        <item>70</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+    </integer-array>
+	<integer name="config_autoBrightnessHbmAmbientLux">3000</integer>
+	
 	<!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
@@ -149,6 +184,8 @@
 	
 	<!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
+	
+	<integer name="config_screenBrightnessExtendedMaximum">306</integer>
 	
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -267,6 +304,7 @@
 	<dimen name="status_bar_height_default">4.4299927mm</dimen>
     <dimen name="status_bar_height_portrait">4.4299927mm</dimen>
 	<dimen name="status_bar_height_landscape">4.4299927mm</dimen>
+	<dimen name="status_bar_indicator_corner_padding">64.0px</dimen>
     
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z @dp</string>
 </resources>

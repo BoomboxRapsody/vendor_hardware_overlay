@@ -8,8 +8,6 @@
     <bool name="config_supportDoubleTapWake">true</bool>
     <bool name="config_supportAudioSourceUnprocessed">false</bool>
 	
-	<bool name="config_automatic_brightness_available">true</bool>
-	
 	<!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
@@ -309,6 +307,8 @@
     <item format="float" type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.5019608</item>
     <item format="float" type="dimen" name="config_screenBrightnessSettingMaximumFloat">1.0</item>
     <item format="float" type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.003921569</item>
+	
+	<bool name="config_displayBrightnessBucketsInDoze">false</bool>
 
     <dimen name="status_bar_height">4.4299927mm</dimen>
 	<dimen name="status_bar_height_default">4.4299927mm</dimen>

@@ -307,6 +307,8 @@
     <dimen name="status_bar_height_portrait">4.4299927mm</dimen>
 	<dimen name="status_bar_height_landscape">4.4299927mm</dimen>
 	<dimen name="status_bar_indicator_corner_padding">64.0px</dimen>
+	
+	<bool name="config_enableBurnInProtection">false</bool>
     
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z @dp</string>
 </resources>

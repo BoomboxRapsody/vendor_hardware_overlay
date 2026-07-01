@@ -233,7 +233,10 @@
     <!-- Whether the always on display mode is available. This should only be enabled
          on devices where the display has been tuned to be power efficient in DOZE and/or
          DOZE_SUSPEND states. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+	
+	<!-- If AOD can show an ambient version of the wallpaper -->
+    <bool name="config_dozeSupportsAodWallpaper">true</bool>
 	
 	<!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead

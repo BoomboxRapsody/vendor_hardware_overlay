@@ -327,7 +327,6 @@
    </string-array>
    
    <string-array name="config_oemFastChargerStatusPaths" translatable="false">
-		<item>/sys/class/power_supply/sm5714-charger/current_now;2750</item>
-		<item>/sys/class/power_supply/sm5714-charger/current_now;4750</item>
+		<item>/sys/class/power_supply/battery/charge_type;Fast</item>
    </string-array>
 </resources>

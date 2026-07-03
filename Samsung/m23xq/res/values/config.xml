@@ -310,6 +310,11 @@
 	<dimen name="status_bar_height_landscape">4.4299927mm</dimen>
 	<dimen name="status_bar_indicator_corner_padding">64.0px</dimen>
 	
+	<!-- Height of area above QQS where battery/time go.
+         Do not read this dimen directly. Use {@link SystemBarUtils#getQuickQsOffsetHeight} instead.
+         -->
+    <dimen name="quick_qs_offset_height">8.8599854mm</dimen>
+	
 	<bool name="config_enableBurnInProtection">false</bool>
     
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z @dp</string>

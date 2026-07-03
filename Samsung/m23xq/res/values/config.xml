@@ -318,4 +318,15 @@
 	<bool name="config_enableBurnInProtection">false</bool>
     
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z @dp</string>
+	
+	<string-array name="config_restartActionsList">
+       <item>restart</item>
+       <item>restart_systemui</item>
+       <item>restart_recovery</item>
+       <item>restart_download</item>
+   </string-array>
+   
+   <string-array name="config_oemFastChargerStatusPaths" translatable="false">
+		<item>/sys/class/power_supply/battery/charge_type;Fast</item>
+   </string-array>
 </resources>

@@ -40,9 +40,9 @@
     <string name="accessibility_quick_settings_caffeine_on">카페인이 켜졌습니다.</string>
 
     <!-- Heads up QS tile -->
-    <string name="quick_settings_heads_up_label">헤드업 디스플레이</string>
-    <string name="accessibility_quick_settings_heads_up_off">헤드업 디스플레이가 꺼졌습니다.</string>
-    <string name="accessibility_quick_settings_heads_up_on">헤드업 디스플레이가 켜졌습니다.</string>
+    <string name="quick_settings_heads_up_label">헤드업 알림</string>
+    <string name="accessibility_quick_settings_heads_up_off">헤드업 알림이 꺼졌습니다.</string>
+    <string name="accessibility_quick_settings_heads_up_on">헤드업 알림이 켜졌습니다.</string>
 
     <!-- PowerShare QS tile -->
     <string name="quick_settings_powershare_label">무선 배터리 공유</string>

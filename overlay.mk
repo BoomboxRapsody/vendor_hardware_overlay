@@ -285,6 +285,7 @@ PRODUCT_PACKAGES += \
 	treble-overlay-samsung-j6 \
 	treble-overlay-samsung-m23xq \
 	treble-overlay-samsung-m23xq-systemui \
+	treble-overlay-samsung-m23xq-wifi \
 	treble-overlay-samsung-m31 \
 	treble-overlay-samsung-m31-systemui \
 	treble-overlay-samsung-m31s \

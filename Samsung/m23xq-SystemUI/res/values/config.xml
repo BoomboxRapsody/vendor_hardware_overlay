@@ -23,7 +23,7 @@
 
     <dimen name="notch_status_bar_padding_top">14.0dip</dimen>
     <dimen name="status_bar_padding_end">4.0dip</dimen>
-    <dimen name="status_bar_padding_start">4.0dip</dimen>
+    <dimen name="status_bar_padding_start">2.0dip</dimen>
     <dimen name="status_bar_icon_padding">2.0dip</dimen>
     <dimen name="status_bar_padding_top">0.0dip</dimen>
 	

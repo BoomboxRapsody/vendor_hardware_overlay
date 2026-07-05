@@ -21,13 +21,9 @@
         <item>825</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
-	
-	<!-- Whether Hearing Aid profile is supported -->
-    <bool name="config_hearing_aid_profile_supported">true</bool>
-	
+
 	<!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
-	<bool name="config_is_sidefps">true</bool>
 	
 	<!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
@@ -45,33 +41,9 @@
          state changes. Voice radio tech change will always trigger an update of
          phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
-	
-	<!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">true</bool>
-	
-	<!-- Whether WiFi display is supported by this device.
-         There are many prerequisites for this feature to work correctly.
-         Here are a few of them:
-         * The WiFi radio must support WiFi P2P.
-         * The WiFi radio must support concurrent connections to the WiFi display and
-           to an access point.
-         * The Audio Flinger audio_policy.conf file must specify a rule for the "r_submix"
-           remote submix module.  This module is used to record and stream system
-           audio output to the WiFi display encoder in the media server.
-         * The remote submix module "audio.r_submix.default" must be installed on the device.
-         * The device must be provisioned with HDCP keys (for protected content).
-    -->
-    <bool name="config_enableWifiDisplay">true</bool>
 
 	<!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Samsung Galaxy M23</string>
-	
-	<!-- Number of physical SIM slots on the device. This includes both eSIM and pSIM slots, and
-         is not necessarily the same as the number of phones/logical modems supported by the device.
-         For example, a multi-sim device can have 2 phones/logical modems, but 3 physical slots,
-         or a single SIM device can have 1 phones/logical modems, but 2 physical slots (one eSIM
-         and one pSIM) -->
-    <integer name="config_num_physical_slots">2</integer>
 	
 	<!-- Flag specifying whether VT is available on device -->
     <bool name="config_device_vt_available">true</bool>
@@ -113,7 +85,6 @@
         <item>3000</item>
         <item>4000</item>
     </integer-array>
-	<integer name="config_autoBrightnessHbmAmbientLux">3000</integer>
 	
 	<!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
@@ -179,16 +150,10 @@
         <item>0,1</item>
     </string-array>
 	
-	<!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">true</bool>
-	
-	<integer name="config_screenBrightnessExtendedMaximum">306</integer>
-	
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">7</integer>
-	<item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.02745098</item>
 	
 	<!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
@@ -235,19 +200,6 @@
          DOZE_SUSPEND states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 	
-	<!-- If AOD can show an ambient version of the wallpaper -->
-    <bool name="config_dozeSupportsAodWallpaper">true</bool>
-	
-	<!-- ComponentName of a dream to show whenever the system would otherwise have
-         gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
-         try to start this dream if possible.  The dream should typically call startDozing()
-         to put the display into a low power state and allow the application processor
-         to be suspended.  When the dream ends, the system will go to sleep as usual.
-         Specify the component name or an empty string if none.
-         Note that doze dreams are not subject to the same start conditions as ordinary dreams.
-         Doze dreams will run whenever the power manager is in a dozing state. -->
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-	
 	<!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
          When false, autosuspend_disable() will be called before the display is turned on
@@ -269,19 +221,6 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">1</integer>
 	
-	<!-- Control whether the always on display mode is enabled by default. This value will be used
-         during initialization when the setting is still null. -->
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>
-	
-	<!-- Set this to true to enable the platform's auto-power-save modes like doze and
-         app standby.  These are not enabled by default because they require a standard
-         cloud-to-device messaging service for apps to interact correctly with the modes
-         (such as to be able to deliver an instant message to the device even when it is
-         dozing).  This should be enabled if you have such services and expect apps to
-         correctly use them when installed on your device.  Otherwise, keep this disabled
-         so that applications can still use their own mechanisms. -->
-    <bool name="config_enableAutoPowerModes">false</bool>
-	
 	<bool name="config_displayBlanksAfterDoze">false</bool>
 	
 	<!-- Power Management: Specifies whether to decouple the interactive state of the
@@ -299,27 +238,19 @@
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 	
-	<!-- Whether the new Auto Selection Network UI should be shown -->
-    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
-	
 	<bool name="config_displayBrightnessBucketsInDoze">false</bool>
 
     <dimen name="status_bar_height">4.4299927mm</dimen>
 	<dimen name="status_bar_height_default">4.4299927mm</dimen>
     <dimen name="status_bar_height_portrait">4.4299927mm</dimen>
 	<dimen name="status_bar_height_landscape">4.4299927mm</dimen>
-	<dimen name="status_bar_indicator_corner_padding">64.0px</dimen>
 	
 	<!-- Height of area above QQS where battery/time go.
          Do not read this dimen directly. Use {@link SystemBarUtils#getQuickQsOffsetHeight} instead.
          -->
-    <dimen name="quick_qs_offset_height">8.8599854mm</dimen>
+    <dimen name="quick_qs_offset_height">4.4299927mm</dimen>
 	
 	<bool name="config_enableBurnInProtection">false</bool>
     
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z @dp</string>
-   
-   <string-array name="config_oemFastChargerStatusPaths" translatable="false">
-		<item>/sys/class/power_supply/battery/charge_type;Fast</item>
-   </string-array>
 </resources>

@@ -16,7 +16,7 @@
 -->
 <resources>
     <!-- Doze: does this device support STATE_DOZE?  -->
-    <bool name="doze_display_state_supported">true</bool>
+    <bool name="doze_display_state_supported">false</bool>
 
     <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
     <bool name="doze_suspend_display_state_supported">false</bool>
@@ -26,8 +26,4 @@
     <dimen name="status_bar_padding_start">2.0dip</dimen>
     <dimen name="status_bar_icon_padding">2.0dip</dimen>
     <dimen name="status_bar_padding_top">0.0dip</dimen>
-	
-	<!-- Whether to show estimate in QS header. Default to false in case there's not enough
-     space -->
-    <bool name="config_showBatteryEstimateQSBH">true</bool>
 </resources>
